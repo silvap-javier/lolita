@@ -27,11 +27,7 @@ function Reveal({ onRestart }) {
             key={i}
             src={photo.src}
             alt={photo.alt}
-            className={`reveal__photo ${
-              PHOTOS.length % 2 !== 0 && i === PHOTOS.length - 1
-                ? 'reveal__photo--single'
-                : ''
-            }`}
+            className="reveal__photo"
             loading="lazy"
           />
         ))}

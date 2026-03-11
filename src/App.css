@@ -472,8 +472,8 @@
 }
 
 .reveal__photos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   margin-bottom: 2.5rem;
   opacity: 0;
@@ -482,9 +482,9 @@
 
 .reveal__photo {
   width: 100%;
-  aspect-ratio: 3/4;
-  object-fit: cover;
-  border-radius: 4px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
   filter: grayscale(0.1);
   transition: all 0.4s var(--transition);
 }
