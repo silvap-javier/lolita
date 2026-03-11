@@ -1,0 +1,8 @@
+name: one-month-app
+static_sites:
+  - name: one-month-app
+    build_command: npm install && npm run build
+    output_dir: dist
+    environment_slug: node-js
+    routes:
+      - path: /
